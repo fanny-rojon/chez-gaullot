@@ -6,19 +6,16 @@
 
 .navbar-cookbook {
   justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-cookbook .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-cookbook .navbar-brand img {
-  width: 40px;
-}
-
 .logo {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: lighter;
   // color: $white;
   &:hover {
