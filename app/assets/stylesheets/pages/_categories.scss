@@ -1,0 +1,32 @@
+.website-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: $light-gray;
+  // background: url("https://res.cloudinary.com/fannylikescoffee/image/upload/v1586716613/header_xfyrza.jpg") no-repeat center center fixed;
+  // background-size: cover;
+  // background-position: center;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fill);
+  grid-gap: 20px;
+  background-color: $white;
+  padding: 40px 20px;
+}
+
+.grid-wrapper img {
+  width: 100%;
+}
+
+.index-title {
+  font-size: 26px;
+  font-weight: lighter;
+  // color: $white;
+  margin: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
