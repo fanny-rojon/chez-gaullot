@@ -1,0 +1,11 @@
+<div class="whole-card">
+  <%= link_to category_path(category) do %>
+    <div class="complete-card">
+      <%= cl_image_tag category.photo.key %>
+      <div class="card-details">
+        <h2><%= category.name %></h2>
+        <p>18 recipes</p>
+      </div>
+    </div>
+  <% end %>
+</div>

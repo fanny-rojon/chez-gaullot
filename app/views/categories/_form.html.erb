@@ -1,0 +1,9 @@
+<%= simple_form_for(@category) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :photo, as: :file %>
+
+    <div>
+      <%= f.button :submit, 'Save', class: 'btn btn-primary' %>
+      <%= link_to 'Cancel', :back, class: 'btn btn-danger' %>
+    </div>
+<% end %>

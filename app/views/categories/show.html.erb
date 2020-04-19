@@ -1,0 +1,4 @@
+<div class="container">
+  <h1><%= @category.name %></h1>
+  <%= cl_image_tag @category.photo.key, height: 300, width: 400, crop: :fill %>
+</div>
