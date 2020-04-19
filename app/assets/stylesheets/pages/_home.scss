@@ -1,1 +1,13 @@
 // Specific CSS for your home-page
+.home-links {
+  height: 100vh;
+  background: url("https://res.cloudinary.com/fannylikescoffee/image/upload/v1587313333/mayte-marin-EsV6_KMs1sA-unsplash_cnm11f.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 100px;
+  text-decoration: none;
+}

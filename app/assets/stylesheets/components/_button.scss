@@ -1,0 +1,44 @@
+.button-white {
+  background-color: $white;
+  color: $black;
+  font-weight: lighter;
+  &:hover {
+  color: $black;
+  background-color: $white-transparent;
+  text-decoration: none;
+  }
+}
+
+.home-button {
+  font-size: 15px;
+  padding: 14px 28px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.button-color {
+  background-color: $raspberry;
+  color: $white;
+  margin-top: 100px;
+  text-decoration: none;
+  &:hover {
+  color: $white;
+  background-color: $white-transparent;
+  text-decoration: none;
+  }
+}
+
+.website-button {
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-weight: lighter;
+  &:hover {
+    text-decoration: none;
+    color: $black;
+    opacity: 0.8;
+  }
+}
+
+
