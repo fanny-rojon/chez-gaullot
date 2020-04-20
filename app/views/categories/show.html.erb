@@ -3,6 +3,9 @@
 </div>
 <div class="container">
   <div class="grid-wrapper">
-    <%#= render @recipes  %>
+  <% @recipes.each do |recipe| %>
+    <%= render 'recipe', recipe: recipe %>
+  <% end %>
   </div>
 </div>
+

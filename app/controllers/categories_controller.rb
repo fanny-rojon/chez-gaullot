@@ -7,6 +7,8 @@ class CategoriesController < ApplicationController
   end
 
   def show
+    @recipes = Recipe.where(category: @category)
+    @recipe = Recipe.last
   end
 
   def new
