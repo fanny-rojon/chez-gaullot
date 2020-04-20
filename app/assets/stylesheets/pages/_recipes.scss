@@ -32,6 +32,14 @@
 
 .recipe-block-image {
   height: 100%;
+  // width: 600px;
+  // object-fit: cover;
+}
+
+.recipe-block-image img {
+  height: 100%;
+  width: 500px;
+  object-fit: cover;
 }
 
 .new-recipe-block {
