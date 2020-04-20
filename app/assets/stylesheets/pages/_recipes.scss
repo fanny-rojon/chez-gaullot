@@ -28,18 +28,22 @@
 
 .recipe-block {
   display: flex;
+  margin-bottom: 30px;
 }
 
 .recipe-block-image {
-  height: 100%;
-  // width: 600px;
-  // object-fit: cover;
+  height: 800px;
+  width: 500px;
+  background-size: cover;
+  background-position: center;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
 }
 
 .recipe-block-image img {
-  height: 100%;
-  width: 500px;
-  object-fit: cover;
+  // height: 100%;
+  // width: 500px;
+  // object-fit: contain;
 }
 
 .new-recipe-block {
@@ -47,8 +51,8 @@
 }
 
 .new-recipe-block-image {
-  height: 100%;
-  width: 50%;
+  // height: 100%;
+  // width: 50%;
 }
 
 .recipe-block-details {

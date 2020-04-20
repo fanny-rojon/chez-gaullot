@@ -4,8 +4,9 @@
 </div>
 <div class="container">
   <div class="recipe-block">
-    <div class="recipe-block-image">
-      <%= cl_image_tag @recipe.photo.key %>
+    <div class="recipe-block-image" style="background-image: url('<%= cl_image_path @recipe.photo.key %>')">
+      <%#= cl_image_tag @recipe.photo.key %>
+      <p></p>
     </div>
     <div class="recipe-block-details">
       <%= link_to @recipe.category.name, category_path(@recipe.category), class: "nav-link website-button button-color" %>
