@@ -4,7 +4,6 @@ class CategoriesController < ApplicationController
 
   def index
     @categories = Category.order(:name)
-    @recipes = Recipe.where(category: @category)
   end
 
   def show

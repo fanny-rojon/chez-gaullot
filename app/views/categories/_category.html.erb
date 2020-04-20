@@ -4,7 +4,7 @@
       <%= cl_image_tag category.photo.key %>
       <div class="card-details">
         <h2><%= category.name %></h2>
-        <p><%= @recipes.count %> recipes</p>
+        <p><%= Recipe.where(category: category).count %> recipes</p>
       </div>
     </div>
   <% end %>
