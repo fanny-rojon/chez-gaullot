@@ -4,7 +4,7 @@
       <%= cl_image_tag category.photo.key %>
       <div class="card-details">
         <h2><%= category.name %></h2>
-        <p>18 recipes</p>
+        <p><%= @recipes.count %> recipes</p>
       </div>
     </div>
   <% end %>
