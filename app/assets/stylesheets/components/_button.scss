@@ -17,9 +17,11 @@
 }
 
 .button-color {
-  background-color: $raspberry;
-  color: $white;
-  margin-top: 100px;
+  background-color: $light-gray;
+  color: $black;
+  // margin-top: 100px;
+  margin-bottom: 15px;
+  text-align: center;
   text-decoration: none;
   &:hover {
   color: $white;

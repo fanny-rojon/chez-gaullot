@@ -8,6 +8,7 @@
       <%= cl_image_tag @recipe.photo.key %>
     </div>
     <div class="recipe-block-details">
+      <%= link_to @recipe.category.name, category_path(@recipe.category), class: "nav-link website-button button-color" %>
       <p class="show-prep-time">Temps de Préparation: <span class="lighter"><%= @recipe.prep_time %></span></p>
       <p class="show-ingredients">Ingrédients:</p>
       <ul class="lighter">
