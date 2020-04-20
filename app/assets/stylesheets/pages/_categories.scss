@@ -1,9 +1,11 @@
 .website-header {
   display: flex;
+  // flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 20vh;
   background-color: $light-gray;
+  padding-bottom: 20px;
   // background: url("https://res.cloudinary.com/fannylikescoffee/image/upload/v1586716613/header_xfyrza.jpg") no-repeat center center fixed;
   // background-size: cover;
   // background-position: center;
@@ -27,7 +29,7 @@
   font-weight: lighter;
   // color: $white;
   margin: 0;
-  padding-bottom: 20px;
+  // padding-bottom: 20px;
   text-align: center;
 }
 

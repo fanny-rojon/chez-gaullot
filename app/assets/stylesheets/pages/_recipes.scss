@@ -1,0 +1,60 @@
+.recipe-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: $light-gray;
+  padding: 10px 0;
+  // background: url("https://res.cloudinary.com/fannylikescoffee/image/upload/v1586716613/header_xfyrza.jpg") no-repeat center center fixed;
+  // background-size: cover;
+  // background-position: center;
+}
+
+.recipe-title {
+  font-size: 26px;
+  font-weight: lighter;
+  margin: 0;
+  text-align: center;
+}
+
+.recipe-author {
+  opacity: 0.8;
+}
+
+.lighter {
+  font-weight: lighter;
+}
+
+.recipe-block {
+  display: flex;
+}
+
+.recipe-block-image {
+  height: 100vh;
+}
+
+.recipe-block-details {
+  background-color: $white;
+  padding: 30px;
+}
+
+.show-name {
+  font-size: 26px;
+}
+
+.show-author {
+
+}
+
+.show-prep-time {
+
+}
+
+.show-ingredients {
+
+}
+
+.show-preparation {
+
+}
