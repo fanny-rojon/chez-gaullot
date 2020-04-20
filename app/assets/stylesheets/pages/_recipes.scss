@@ -31,7 +31,16 @@
 }
 
 .recipe-block-image {
-  height: 100vh;
+  height: 100%;
+}
+
+.new-recipe-block {
+  display: flex;
+}
+
+.new-recipe-block-image {
+  height: 100%;
+  width: 50%;
 }
 
 .recipe-block-details {
@@ -43,18 +52,3 @@
   font-size: 26px;
 }
 
-.show-author {
-
-}
-
-.show-prep-time {
-
-}
-
-.show-ingredients {
-
-}
-
-.show-preparation {
-
-}
