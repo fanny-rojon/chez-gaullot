@@ -30,3 +30,41 @@
   padding-bottom: 20px;
   text-align: center;
 }
+
+
+
+.recipe-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fill);
+  grid-gap: 20px;
+  background-color: $white;
+  padding: 40px 20px;
+}
+
+.recipe-grid-wrapper img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

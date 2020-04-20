@@ -1,10 +1,13 @@
-<div class="recipe-card">
+<div class="recipe-whole-card">
   <%= link_to recipe_path(recipe) do %>
-    <div class="recipe-image">
-      <%#= cl_image_tag recipe.photo.key %>
+    <div class="recipe-full-card">
+      <div class="recipe-image">
+        <%= cl_image_tag recipe.photo.key %>
+      </div>
       <div class="recipe-details">
-        <h2><%= recipe.name %></h2>
-        <p><%= recipe.prep_time %></p>
+        <h2 id="recipe-name"><%= recipe.name %></h2>
+        <p id="recipe-author">de <%= recipe.author %></p>
+        <p id="recipe-prep-time">Prep: <%= recipe.prep_time %></p>
       </div>
     </div>
   <% end %>

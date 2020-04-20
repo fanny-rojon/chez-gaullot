@@ -16,7 +16,7 @@ class RecipesController < ApplicationController
   def create
     @recipe = Recipe.new(recipe_params)
     if @recipe.save
-      redirect_to category_recipe_path(@recipe)
+      redirect_to recipe_path(@recipe)
     else
       render :new
     end
@@ -29,7 +29,7 @@ class RecipesController < ApplicationController
     @recipe = Recipe.find(params[:id])
     @recipe.update(recipe_params)
     # no need for app/views/recipes/update.html.erb
-    redirect_to category_recipe_path(@recipe)
+    redirect_to recipe_path(@recipe)
   end
 
   private
