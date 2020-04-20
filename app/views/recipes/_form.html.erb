@@ -10,7 +10,9 @@
 1CS de sucre roux
 1cc de cacao" %>
     <%= f.input :preparation, label: "Préparation", placeholder: "Préchauffer le four à 180°C." %>
-    <%= f.input :author, label: "Auteur", placeholder: "Catherine, Martine, Caroline, Laure, Delphine, Céline, Fanny" %>
+    <%= f.input :author, label: "Auteur", input_html: {value: current_user.first_name } %>
+    <%#= f.input :author, label: "Auteur", value: current_user.first_name %>
+    <%#= f.input :author, label: "Auteur", placeholder: "Catherine, Martine, Caroline, Laure, Delphine, Céline, Cécile, Fanny" %>
     <%= f.input :photo, as: :file %>
 
     <div>
