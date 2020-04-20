@@ -1,5 +1,5 @@
 <%= simple_form_for(@recipe) do |f| %>
-    <%= f.association :category, label: "Catégorie" %>
+    <%= f.association :category, collection: Category.order(:name), label: "Catégorie" %>
     <%#= f.association :category, collection: Category.all(order: 'name') %>
     <%= f.input :name, label: "Nom de la recette", placeholder: "Tarte au Chocolat Amer" %>
     <%= f.input :prep_time, label: "Temps de préparation", placeholder: "30min, 45min, 1h" %>
