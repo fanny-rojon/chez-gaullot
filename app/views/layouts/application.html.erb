@@ -16,6 +16,10 @@
   <body>
     <% if controller.controller_name == "pages" && controller.action_name == "home" %>
     <%= render 'shared/home-navbar' %>
+    <% elsif controller.controller_name == "recipes" && controller.action_name == "show"  %>
+    <%= render 'shared/recipe-navbar' %>
+    <% elsif controller.controller_name == "recipes" && (controller.action_name == "new" || controller.action_name == "edit")  %>
+    <%= render 'shared/new-edit-navbar' %>
     <% else %>
     <%= render 'shared/website-navbar' %>
     <% end %>
