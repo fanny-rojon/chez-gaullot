@@ -4,7 +4,7 @@
       <% if category.photo.attached? %>
       <%= cl_image_tag category.photo.key %>
       <% else %>
-      <%= image_tag("placeholder") %>
+      <%= cl_image_tag("placeholder_gysyia") %>
       <% end %>
       <div class="card-details">
         <h2><%= category.name %></h2>
