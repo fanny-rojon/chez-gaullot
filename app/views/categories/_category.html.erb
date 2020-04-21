@@ -1,7 +1,11 @@
 <div class="whole-card">
   <%= link_to category_path(category) do %>
     <div class="complete-card">
+      <% if category.photo.attached? %>
       <%= cl_image_tag category.photo.key %>
+      <% else %>
+      <%= image_tag("placeholder") %>
+      <% end %>
       <div class="card-details">
         <h2><%= category.name %></h2>
         <p><%= Recipe.where(category: category).count %> recettes</p>

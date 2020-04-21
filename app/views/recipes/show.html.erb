@@ -4,8 +4,12 @@
 </div>
 <div class="container">
   <div class="recipe-block">
-    <div class="recipe-block-image" style="background-image: url('<%= cl_image_path @recipe.photo.key %>')">
-      <%#= cl_image_tag @recipe.photo.key %>
+    <div class="recipe-block-image">
+      <% if @recipe.photo.attached? %>
+        <%= cl_image_tag @recipe.photo.key %>
+        <% else %>
+        <%= image_tag("placeholder") %>
+        <% end %>
       <p></p>
     </div>
     <div class="recipe-block-details">

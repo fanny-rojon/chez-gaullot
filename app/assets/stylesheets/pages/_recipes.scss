@@ -34,15 +34,15 @@
 .recipe-block-image {
   height: 800px;
   width: 500px;
-  background-size: cover;
-  background-position: center;
+  // background-size: cover;
+  // background-position: center;
   // background-repeat: no-repeat;
   // background-attachment: fixed;
 }
 
 .recipe-block-image img {
-  // height: 100%;
-  // width: 500px;
+  height: 100%;
+  width: 500px;
   // object-fit: contain;
 }
 

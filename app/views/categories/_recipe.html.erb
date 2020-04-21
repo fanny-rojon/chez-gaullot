@@ -2,7 +2,11 @@
   <%= link_to recipe_path(recipe) do %>
     <div class="recipe-full-card">
       <div class="recipe-image">
+        <% if recipe.photo.attached? %>
         <%= cl_image_tag recipe.photo.key %>
+        <% else %>
+        <%= image_tag("placeholder") %>
+        <% end %>
       </div>
       <div class="recipe-details">
         <h2 id="recipe-name"><%= recipe.name %></h2>
