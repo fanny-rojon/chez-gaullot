@@ -7,7 +7,7 @@ class CategoriesController < ApplicationController
   end
 
   def show
-    @recipes = Recipe.where(category: @category)
+    @recipes = Recipe.where(category: @category).order(:name)
     @recipe = Recipe.last
   end
 
