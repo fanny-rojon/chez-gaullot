@@ -44,4 +44,17 @@
   }
 }
 
+.explore-button {
+  font-size: 30px;
+  border-radius: 5px;
+  padding: 6px 20px;
+  margin-right: 10px;
+  font-weight: lighter;
+  color: $black;
+  &:hover {
+    text-decoration: none;
+    color: $black;
+    opacity: 0.8;
+  }
+}
 
