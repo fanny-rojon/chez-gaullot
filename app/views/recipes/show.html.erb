@@ -4,7 +4,7 @@
 </div>
 <div class="container">
   <div class="recipe-block">
-    <div class="recipe-block-image">
+    <div class="recipe-block-image d-none d-md-block">
       <% if @recipe.photo.attached? %>
         <%= cl_image_tag @recipe.photo.key %>
         <% else %>
