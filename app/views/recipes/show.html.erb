@@ -31,8 +31,10 @@
         <li><%= step %></li>
         <% end %>
       </ul>
-      <% unless @recipe.source.nil? %>
-      <p>Source: <span class="lighter"><%= @recipe.source %></span> </p>
+      <% if @recipe.source.nil? || @recipe.source == "" %>
+        <p></p>
+      <% else %>
+        <p>Source: <span class="lighter"><%= @recipe.source %></span> </p>
       <% end %>
     </div>
   </div>
