@@ -3,31 +3,41 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><%= content_for?(:title) ? yield(:title) : "Chez Gaullot" %></title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
+
+    <!-- Favicon -->
     <%= favicon_link_tag asset_path('cafe.png') %>
+
+    <!-- Stylesheets & Scripts -->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://kit.fontawesome.com/b4e5ca6111.js" crossorigin="anonymous"></script>
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
-    <meta property="og:title" content="Chez Gaullot" />
-    <meta property="og:description" content="Si t'es pas content, t'as qu'à aller manger chez Gaullot!" />
+
+    <!-- Title & Description -->
+    <title><%= meta_title %></title>
+    <meta name="description" content="<%= meta_description %>">
+
+    <!-- Facebook Open Graph data -->
+    <meta property="og:title" content="<%= meta_title %>" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="<%= request.original_url %>" />
-    <meta property="og:image" content="<%= asset_url('chez-gaullot-main-og-min.jpg') %>" />
+    <meta property="og:image" content="<%= meta_image %>" />
+    <meta property="og:description" content="<%= meta_description %>" />
+    <meta property="og:site_name" content="<%= meta_title %>" />
   </head>
   <body>
     <% if controller.controller_name == "pages" && controller.action_name == "home" %>
-    <%= render 'shared/home-navbar' %>
+     <%= render 'shared/home-navbar' %>
     <% elsif controller.controller_name == "recipes" && controller.action_name == "show"  %>
-    <%= render 'shared/recipe-navbar' %>
+     <%= render 'shared/recipe-navbar' %>
     <% elsif controller.controller_name == "recipes" && (controller.action_name == "new" || controller.action_name == "edit")  %>
-    <%= render 'shared/new-edit-navbar' %>
+     <%= render 'shared/new-edit-navbar' %>
     <% else %>
-    <%= render 'shared/website-navbar' %>
+     <%= render 'shared/website-navbar' %>
     <% end %>
-    <%= render 'shared/flashes' %>
+     <%= render 'shared/flashes' %>
     <%= yield %>
     <footer class="home-footer">
       <p>Copyright Chez Gaullot© 2020 | All Rights Reserved.</p>
