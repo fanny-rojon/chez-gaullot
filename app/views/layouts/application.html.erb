@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Chez Gaullot</title>
+    <title><%= content_for?(:title) ? yield(:title) : "Chez Gaullot" %></title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= favicon_link_tag asset_path('cafe.png') %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://kit.fontawesome.com/b4e5ca6111.js" crossorigin="anonymous"></script>
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+    <meta property="og:title" content="<%= :title %>" />
+    <meta property="og:description" content="Si t'es pas content, t'as qu'à aller manger chez Gaullot!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= request.original_url %>" />
+    <meta property="og:image" content="<%= asset_url('chez-gaullot-main-og-min.jpg') %>" />
   </head>
   <body>
     <% if controller.controller_name == "pages" && controller.action_name == "home" %>
