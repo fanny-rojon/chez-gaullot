@@ -1,0 +1,30 @@
+.expressions-all {
+  display: flex;
+}
+
+
+
+.expressions-all h2 {
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+.expressions {
+  background-color: $white;
+  padding: 30px;
+  margin: 10px;
+}
+
+.varennes {
+  margin-right: 20px;
+}
+
+.expressions h3 {
+  font-size: 16px;
+}
+
+.expressions p {
+  font-size: 14px;
+  font-weight: lighter;
+}
