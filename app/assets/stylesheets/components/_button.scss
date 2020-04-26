@@ -58,3 +58,22 @@
   }
 }
 
+.expressions-button {
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 6px 20px;
+  margin-bottom: 30px;
+  font-weight: lighter;
+  color: $black;
+  &:hover {
+    text-decoration: none;
+    color: $black;
+    opacity: 0.8;
+  }
+}
+
+
+
+
+
+
