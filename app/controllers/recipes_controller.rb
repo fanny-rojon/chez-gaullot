@@ -1,6 +1,6 @@
 class RecipesController < ApplicationController
-  before_action :set_recipe, only: [:show, :edit]
-    skip_before_action :authenticate_user!, only: :show
+  before_action :set_recipe, only: [:show, :edit, :update]
+  skip_before_action :authenticate_user!, only: :show
 
   # def index
   #   @categories = Recipe.order(:name)
@@ -26,7 +26,6 @@ class RecipesController < ApplicationController
   end
 
   def update
-    @recipe = Recipe.find(params[:id])
     @recipe.update(recipe_params)
     # no need for app/views/recipes/update.html.erb
     redirect_to recipe_path(@recipe)
