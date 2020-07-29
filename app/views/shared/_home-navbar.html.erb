@@ -26,7 +26,9 @@
         <% else %>
           <li class="nav-item">
             <%= link_to "Recettes", categories_path, class: "nav-link website-button button-white" %>
-            <%= link_to "Expressions", expressions_path, class: "nav-link website-button button-white" %>
+            <% if user_signed_in? %>
+              <%= link_to "Expressions", expressions_path, class: "nav-link website-button button-white" %>
+            <% end %>
             <%#= link_to "Login", new_user_session_path, class: "nav-link website-button button-white" %>
           </li>
         <% end %>
